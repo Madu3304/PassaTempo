@@ -13,7 +13,7 @@ const Recados = sequelize.define('recados', {
     descricaoa:{
         type:Sequelize.STRING,
         allowNull: false
-
+aaaaaa
     },
 
     descricaob:{
