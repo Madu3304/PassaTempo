@@ -2,41 +2,46 @@ import { Sequelize } from 'sequelize';
 import Sequelize from ".../config/banco.js";
 
 
-const Recados = sequelize.define('recados', {
-    id_recados:{
+const Evento = sequelize.define('evento', {
+
+    id_evento:{
         type:Sequelize.INTEGER,
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
     },
 
-    descricaoa:{
-        type:Sequelize.STRING,
-        allowNull: false
-
-    },
-
-    descricaob:{
+    nome_evento:{
         type:Sequelize.STRING,
         allowNull: false
     },
 
-    descricaoc:{
+    categoria_evento:{
+        type:Sequelize.STRING,
+        allowNull: false
+    },
+
+    local: {
         type: Sequelize.STRING,
         allowNull: false
     },
 
-    descricaod: {
+
+    data: {
+        type: Sequelize.DATE,
+        allowNull: false
+    },
+
+    inicio: {
+        type: Sequelize.TIME,
+        allowNull: false
+    },
+
+    descricao: {
         type: Sequelize.STRING,
         allowNull: false
     },
 
-    
-    descricaoe: {
-        type: Sequelize.STRING,
-        allowNull: false
-    }
+})
 
- })
-
- export default Recados;
+export default Evento;
