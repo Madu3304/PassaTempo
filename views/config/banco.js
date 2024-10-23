@@ -7,6 +7,6 @@ const sequelize = new Sequelize('gestao_voluntarios', 'root', '', {
     define: {
         timestamps: false,
       }
-})
+  });
 
 export default sequelize;
