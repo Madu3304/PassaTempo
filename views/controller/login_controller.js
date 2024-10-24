@@ -1,13 +1,12 @@
-const Login = require("../models/login_model").default;
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const { sendMail, sendMailTo } = require("../helpers/mail");
-const { EmailValido } = require("../helpers/Validacoes");
-const db = require("../").default;
-
-const CriarUsuarioToken = require("../helpers/CriarUsuarioToken");
-const ObterToken = require("../helpers/ObterToken");
-const ObterUsuarioToken = require("../helpers/ObterUsuarioToken");
+import Login from ("../models/login_model").default;
+import bcrypt from ("bcrypt");
+import jwt from ("jsonwebtoken");
+import { sendMail, sendMailTo } from ("../helpers/mail");
+import { EmailValido } from ("../helpers/Validacoes");
+import db from ("../").default;
+import CriarUsuarioToken from ("../helpers/CriarUsuarioToken");
+import ObterToken from ("../helpers/ObterToken");
+import ObterUsuarioToken from ("../helpers/ObterUsuarioToken");
 
 module.exports = class UsuarioController {
 
