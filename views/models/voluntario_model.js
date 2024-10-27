@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize';
-import Sequelize from ".../config/banco.js";
+import sequelize from "../config/banco.js";
 
 
 const Voluntario = sequelize.define('voluntario', {

@@ -1,5 +1,6 @@
 import express from 'express'
-import {getVoluntario, createVoluntario, updateVoluntario, deleteVoluntario} from '../controller/voluntario_controller.js'
+import { voluntario } from '../controller/voluntario_controller.js'
+// import {getVoluntario, createVoluntario, updateVoluntario, deleteVoluntario} from '../controller/voluntario_controller.js'
 
 const router = express.Router()
 

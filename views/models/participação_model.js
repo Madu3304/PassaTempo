@@ -1,5 +1,5 @@
 import sequelize, { Sequelize } from 'sequelize';
-import Sequelize from ".../config/banco.js";
+import sequelize from "../config/banco.js";
 
 const Participacao = sequelize.default('participacap', {
 

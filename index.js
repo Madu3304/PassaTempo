@@ -5,7 +5,7 @@ config ();
 import express from "express";
 import path from "path";
 // import sincronizarBanco from "./views/config/server.js";
-import { autheticateToken } from "./views/middleware/auth.js";
+import { authenticateToken } from "./views/middleware/auth.js";
 import { fileURLToPath } from "url";
 import jwt from "jsonwebtoken";
 import cors from "cors";
@@ -27,5 +27,16 @@ index.use(express.urlencoded({ extended: true }));
 index.use(cors());
 index.use(bodyParser.json());
 
+index.use(evento_routes)
+index.use(home_routes)
+index.use(participacao_routes)
+index.use(voluntario_routes)
 
 
+
+
+const PORT = process.env.PORT || 8080
+server.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`)
+ }
+) 

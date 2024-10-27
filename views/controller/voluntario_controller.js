@@ -1,5 +1,5 @@
 import { where } from "sequelize";
-import Voluntario from "../voluntario_model.js";
+import Voluntario from "../models/voluntario_model.js";
 
 const voluntario = {};
 
@@ -108,4 +108,4 @@ voluntario.deleteVoluntario = async (req, res) => {
   }
 };
 
-export default voluntario;
+export {voluntario};
