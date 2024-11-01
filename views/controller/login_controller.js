@@ -138,4 +138,3 @@ module.exports = class UsuarioController {
     }
   }
 };
-s
